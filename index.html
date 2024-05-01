@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Product Details Page</title>
+  </head>
+
+  <body>
+    <div class="flex-box">
+      <div class="left">
+        <div class="big-img">
+          <img src="img/Rectangle4.png" />
+        </div>
+        <br />
+        <div class="images">
+          <div class="small-img">
+            <img src="img/Rectangle8.png" onclick="showImg(this.src)" />
+          </div>
+          <div class="small-img">
+            <img src="img/Rectangle5.png" onclick="showImg(this.src)" />
+          </div>
+          <div class="small-img">
+            <img src="img/Rectangle7.png" onclick="showImg(this.src)" />
+          </div>
+          <div class="small-img">
+            <img src="img/Rectangle8.png" onclick="showImg(this.src)" />
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <p class="product-vendor"></p>
+        <h2 class="product-title"></h2>
+        <hr />
+        <div class="price-container">
+          <div class="actual-price">
+            <p class="price"></p>
+            <p class="discount"></p>
+          </div>
+          <p id="mrp"><del class="mrp"></del></p>
+        </div>
+        <hr />
+        <div class="select-color">
+          <h3>Choose a Color</h3>
+          <div class="colors">
+            <div class="clr1 clr"></div>
+            <div class="clr2 clr"></div>
+            <div class="clr3 clr"></div>
+            <div class="clr4 clr"></div>
+          </div>
+        </div>
+        <hr />
+        <div class="sizes-container">
+          <h3>Choose a Size</h3>
+          <div class="select-size">
+            <div class="sizes">
+              <div class="container">
+                <input type="radio" name="size" value="small" class="inp1" />
+                <label class="small size"> </label>
+              </div>
+
+              <div class="container">
+                <input type="radio" name="size" value="medium" class="inp2" />
+                <label class="medium size"> </label>
+              </div>
+
+              <div class="container">
+                <input type="radio" name="size" value="large" class="inp3" />
+                <label class="large size"> </label>
+              </div>
+
+              <div class="container">
+                <input
+                  type="radio"
+                  name="size"
+                  value="extra-large"
+                  class="inp4"
+                />
+                <label class="extra-large size"> </label>
+              </div>
+
+              <div class="container">
+                <input type="radio" name="size" value="xxl" class="inp5" />
+                <label class="double-extra-large size"> </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="add-to-cart">
+          <div class="add-container">
+            <div class="quantity-selector">
+              <button class="quantity-btn minus-btn">-</button>
+              <input class="quantity-input" type="number" value="1" min="1" />
+              <button class="quantity-btn plus-btn">+</button>
+            </div>
+            <div class="btn-container">
+              <button class="add">Add To Cart</button>
+              <img class="cart-icon" src="./img/Vector.png" alt="add" />
+            </div>
+          </div>
+        </div>
+        <div class="add-to-cart-msg" style="display: none"></div>
+        <hr />
+        <div class="description"></div>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
